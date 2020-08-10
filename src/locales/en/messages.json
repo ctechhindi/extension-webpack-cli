@@ -1,0 +1,11 @@
+{
+    "appName": {
+        "message": "extension-webpack-cli"
+    },
+    "appShortName": {
+        "message": "extension-webpack-cli"
+    },
+    "appDescription": {
+        "message": "Create Google Extension with NPM Webpack CLI"
+    }
+}
