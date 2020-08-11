@@ -8,15 +8,15 @@ In the package root directory, run the `npm init` command.
 npm init
 ```
 
-## Create Required File/Folder
+## Create Required Folder Structure
 
 ```
-├─ assets
-|  ├─ icons
-|  └─ locales
-|     └─ en
-|        └─ messages.json
 ├─ src
+   ├─ icons
+   ├─ content // content scripts
+   ├─ locales
+   |  └─ en
+   |     └─ messages.json
    ├─ options
    |  ├─ options.html
    |  ├─ options.css
@@ -128,7 +128,7 @@ module.exports = {
     new CopyWebpackPlugin({
       patterns: [
         { from: 'icons', to: 'icons' },
-        { from: 'locales', to: 'locales' }
+        { from: 'locales', to: '_locales' }
       ],
     }),
   ],
@@ -137,7 +137,7 @@ module.exports = {
 
 ---
 
-### **copy-webpack-plugin**
+### mini-css-extract-plugin
 
 * This plugin extracts CSS into separate files.
 * Install [MiniCssExtractPlugin](https://webpack.js.org/plugins/mini-css-extract-plugin/) with npm:

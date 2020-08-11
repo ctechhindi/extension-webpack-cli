@@ -5,12 +5,12 @@ Create Google Browser Extension with NPM Webpack CLI
 ## Structure
 
 ```
-├─ assets
-|  ├─ icons
-|  └─ locales
-|     └─ en
-|        └─ messages.json
 ├─ src
+   ├─ icons
+   ├─ content // content scripts
+   ├─ locales
+   |  └─ en
+   |     └─ messages.json
    ├─ options
    |  ├─ options.html
    |  ├─ options.css
@@ -55,6 +55,12 @@ $ npm run watch
 * `npm run build-zip`
 
   After the extension is created, you can use the extension folder as zip format in the `build-zip` Folder.
+
+## Adding extension to Chrome Browser
+
+Before publishing to Chrome Web Store, it is always good to test locally.
+
+All you need to do is to run `npm run build` to put everything required into `dist` folder, then launch `chrome://extensions/` in Google Chrome.
 
 
 ## Credits

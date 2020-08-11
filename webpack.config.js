@@ -12,6 +12,8 @@ const config = {
     'background': './background.js',
     'popup/popup': './popup/popup.js',
     'options/options': './options/options.js',
+    // /src/content/[name].js
+    'scripts/script1': './content/custom-script.js',
   },
 
   // Where to output
@@ -19,6 +21,10 @@ const config = {
     // path: path.resolve(__dirname, './dist/'),
     path: __dirname + '/dist',
     filename: '[name].js',
+  },
+
+  resolve: {
+    extensions: [".js"]
   },
 
   module: {
